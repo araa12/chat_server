@@ -4,7 +4,6 @@ const app = express();
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 
-const port =  process.env.port || 5000;
 var clients= {};
 
 //middeware
@@ -39,6 +38,6 @@ app.get('/check', (req, res)=> {
 });
 
 
-server.listen(port, "0.0.0.0",   console.log(`listening on port ${port}`));
+server.listen(process.env.PORT || 3000, "0.0.0.0",   console.log(`listening on port ${port}`));
 
 
