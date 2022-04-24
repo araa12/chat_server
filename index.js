@@ -38,6 +38,6 @@ app.get('/check', (req, res)=> {
 });
 
 
-server.listen(process.env.PORT || 3000, "0.0.0.0",   console.log(`listening on port ${port}`));
+server.listen(process.env.PORT || 3000, "0.0.0.0",   console.log(`listening on port `));
 
 
